@@ -48,7 +48,7 @@ class WizardTest {
     }
 
     @Test
-    fun train_manaExceedsFive_increaseSpellPower_decreaseMana() {
+    fun train_manaExceedsOrEqualsFive_increaseSpellPower_decreaseMana() {
         evilWizard.mana = 6
         val prevSpellPower = evilWizard.spellPower
         evilWizard.train()
